@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="pe.edu.upeu.proyect_final_gp1.controller.UsuarioController"
@@ -28,8 +29,34 @@
                 </children>
             </VBox>
             <!--lateral derecho-->
-            <VBox>
+            <VBox prefWidth="350.0" spacing="20.0" styleClass="right-pane" HBox.hgrow="ALWAYS">
+             <padding>
+                 <Insets bottom="40.0" left="40.0" top="40.0"/>
+             </padding>
+                <children>
+                    <Label text="UPeU" textFill="WHITE">
+                        <font><Font name="System Bold" size="48.0" /></font >
 
+                    </Label>
+                    <VBox spacing="5.0">
+                        <children>
+                            <Label text="Usuario" textFill="666666"/>
+                            <TextField promptText="Ingrese su usuario"/>
+                        </children>
+                    </VBox>
+                    <VBox spacing="5.0">
+                     <children>
+                         <Label text="Password" textFill="666666"/>
+                         <PasswordField promptText="*******"/>
+                     </children>
+                    </VBox>
+                    <Button maxWidth="Infinity" mnemonicParsing="false"
+                            styleClass="button-login" text="INGRESAR">
+                        <VBox.margin>
+                            <Insets top="10.0"/>
+                        </VBox.margin>
+                    </Button>
+                </children>
             </VBox>
         </children>
     </HBox>

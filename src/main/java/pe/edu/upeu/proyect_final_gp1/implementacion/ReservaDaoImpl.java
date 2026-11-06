@@ -3,6 +3,8 @@ package pe.edu.upeu.proyect_final_gp1.implementacion;
 
 
 import pe.edu.upeu.proyect_final_gp1.interfaces.IReservaDao;
+import pe.edu.upeu.proyect_final_gp1.modelo.Cliente;
+import pe.edu.upeu.proyect_final_gp1.modelo.Habitacion;
 import pe.edu.upeu.proyect_final_gp1.modelo.Reserva;
 import pe.edu.upeu.proyect_final_gp1.utils.ConexionDB;
 

@@ -36,7 +36,7 @@ public class UsuarioDaoImpl implements IUsuarioDao {
                 }
             }
         } catch (SQLException e) {
-            System.out.println("error de login"e.getMessage());
+            System.out.println("error de login"+e.getMessage());
         }
         return us;
     }
